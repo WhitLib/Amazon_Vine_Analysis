@@ -1,13 +1,18 @@
 # Amazon_Vine_Analysis
 Big Data Analysis Using AWS RDS and S3
 
-### Overview
+### Table of Contents
+- [1 Overview](#1-overview)
+- [2 Results](#2-results)
+- [3 Summary](#3-summary)
+
+## 1 Overview
 
 The purpose of this project was to analyze Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
 In this project, access was given to approximately 50 datasets. Each one containing reviews of a specific product, from clothing apparel to wireless products. From these datasets, one was chosen - Pet Products - and PySpark was used to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, Pyspark was used to determine if there is any bias toward favorable reviews from Vine members in the Pet Products dataset. 
 
-### Results
+## 2 Results
 
 The results of this answered the following questions: 
 
@@ -23,7 +28,7 @@ From the Vine reviews, **65** of the 170 helpful reviews were 5 star reviews - o
 
 <p align=center> <img src="https://user-images.githubusercontent.com/95978097/167303771-5154072e-5e17-4c09-8a53-cf9c468f82cb.png"> </p> 
 
-### Summary
+## 3 Summary
 
 Based on the results, there does **not** appear to be positivity bias within the Vine (paid) program. Of the 170 *helpful* Vine reviews, only 38.24% of those gave 5 star ratings whereas, of the 20,612 helpful unpaid reviews, 54.47% of those gave 5 star reviews. It could be assumed that the Vine program encourages reviewers to have discretion when leaving 5 star reviews and perhaps consider a certain criteria when leaving reviews on Amazon items.
 
